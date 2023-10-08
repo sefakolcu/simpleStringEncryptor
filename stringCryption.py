@@ -1,6 +1,5 @@
-
-def string_cryption_main(main_string):
-
+def string_cryption_main(collected_string):
+    main_string = str(collected_string)
     crypted_string = str()
     cryption_letter_list = list()
 
@@ -30,7 +29,9 @@ def string_cryption_main(main_string):
     return crypted_string
 
 
-def string_cryption_password_main(main_string, main_password):
+def string_cryption_password_main(collected_string, collected_password):
+    main_string = str(collected_string)
+    main_password = str(collected_password)
 
     count = 0
     crypted_string = str()

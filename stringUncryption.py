@@ -1,6 +1,5 @@
-
-def string_uncryption_main(crypted_string):
-
+def string_uncryption_main(collected_string):
+    crypted_string = str(collected_string)
     uncryption_group = str()
     uncrypted_string = str()
     uncryption_group_list = list()
@@ -38,7 +37,9 @@ def string_uncryption_main(crypted_string):
     return uncrypted_string
 
 
-def string_uncryption_password_main(crypted_string, main_password):
+def string_uncryption_password_main(collected_string, collected_password):
+    crypted_string = str(collected_string)
+    main_password = str(collected_password)
 
     uncryption_group = str()
     uncrypted_string = str()
@@ -82,7 +83,6 @@ def string_uncryption_password_main(crypted_string, main_password):
         if letters_to_cryption_in_cryption_letter_list in cryption_keys:
             crypted_letter = cryption_dictionary[letters_to_cryption_in_cryption_letter_list]
             crypted_main_password = crypted_main_password + crypted_letter
-
 
     for letters_to_component in crypted_string:
         uncryption_group = uncryption_group + letters_to_component
